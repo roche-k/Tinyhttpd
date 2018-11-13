@@ -1,5 +1,15 @@
 A mirror for tinyhttpd(Tinyhttpd非官方镜像,Fork自[sourceForge](https://sourceforge.net/projects/tiny-httpd/),仅供学习)
 
+预备把这个http服务器做成内核组件的形式  
+~~没有什么特殊的意义，纯粹是做着有意思~~  
+附带练手  
+说不定什么时候就弃坑了  
+就酱
+
+license就用原始的GPL V3  
+不想改了  
+准备在VMware下的FreeBSD11.2上跑
+
 测试CGI时需要本机安装PERL，同时安装perl-cgi
 
 ### Prepare 

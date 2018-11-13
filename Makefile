@@ -1,9 +1,4 @@
-all: httpd client
-LIBS = -lpthread #-lsocket
-httpd: httpd.c
-	gcc -g -W -Wall $(LIBS) -o $@ $<
+KMOD=	httpd_ko
+SRCS=	httpd_ko.c
 
-client: simpleclient.c
-	gcc -W -Wall -o $@ $<
-clean:
-	rm httpd
+.include <bsd.kmod.mk> opt_inet.h opt_inet6.h opt_ipsec.h opt_rss.h
